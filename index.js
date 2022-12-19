@@ -232,8 +232,9 @@ Use getArtistByIndex to do the following:
 
 🌟 EXAMPLE: if getArtistByIndex is invoked with the artists array and the number 0, it will return `the artist at index 0 is Amedeo Modigliani` */
 
-function getArtistByIndex(/*Your Code Here*/) {
+function getArtistByIndex(/*Your Code Here*/artists, index) {
   /*Your Code Here*/
+  return `the artist at index ${index} is ${artists[index]['name']}`
 }
 
 
