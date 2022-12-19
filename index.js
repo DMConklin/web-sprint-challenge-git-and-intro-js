@@ -313,8 +313,11 @@ Use lotsOfArt to do the following:
 🌟 EXAMPLE: lotsOfArt(artists) will return ["Amedeo Modigliani", "Rene Magritte", ... "Albrecht Dürer"]
 */
 
-function lotsOfArt(/*Your Code Here*/) {
+function lotsOfArt(/*Your Code Here*/artists) {
   /*Your Code Here*/
+  let artistsOver100 = []
+  artists.forEach(artist => artist['paintings'] > 100 ? artistsOver100.push(artist['name']) : null)
+  return artistsOver100
 }
 
 
