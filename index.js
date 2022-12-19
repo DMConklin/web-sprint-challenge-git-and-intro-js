@@ -247,8 +247,13 @@ Use listOfNames to do the following:
 🌟 EXAMPLE of return: ["Amedeo Modigliani", "Vasiliy Kandinskiy", "Diego Rivera"....]
 */
 
-function listOfNames(/*Your Code Here*/) {
+function listOfNames(/*Your Code Here*/artists) {
   /*Your Code Here*/
+  let artistNames = []
+  for (let i = 0; i < artists.length; i++) {
+    artistNames.push(artists[i]['name'])
+  }
+  return artistNames
 }
 
 
